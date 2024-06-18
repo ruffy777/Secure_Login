@@ -1,0 +1,8 @@
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.csproj.AssemblyReference.cache
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.AssemblyInfoInputs.cache
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.AssemblyInfo.cs
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rapha\source\repos\Secure_Login\seclogin\API\obj\Debug\net8.0\API.sourcelink.json

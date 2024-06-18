@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jpubLMPSBR0ZQ0Oe5H79cLSJY412ndOe26QEF/yt/mWZrbo6lD4IVG52ZpzO6uGSjS6CF/9N/AYhd9BqrYmijQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rapha\\source\\repos\\Secure_Login\\seclogin\\seclogin\\seclogin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rapha\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+  ],
+  "logs": []
+}

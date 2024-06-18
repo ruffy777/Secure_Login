@@ -1,0 +1,5 @@
+C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\API.dll
+C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\seclogin.dll
+C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\seclogin.pdb
+C:\Users\rapha\source\repos\Secure_Login\seclogin\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\rapha\source\repos\Secure_Login\seclogin\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

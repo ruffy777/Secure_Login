@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  seclogin:
+    image: ${DOCKER_REGISTRY-}seclogin
+    build:
+      context: .
+      dockerfile: seclogin\Dockerfile
+
+  api:
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: API\Dockerfile
+  mssql:
+    image: ${DOCKER_REGISTRY-}secsql
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
