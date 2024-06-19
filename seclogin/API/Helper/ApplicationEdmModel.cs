@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using API.Model;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
 
@@ -11,7 +12,7 @@ namespace API.Helper
             var modelBuilder = new ODataConventionModelBuilder();
             modelBuilder.EnableLowerCamelCase();
 
-
+            modelBuilder.EntitySet<UserCredential>("UserCredential");
             return modelBuilder.GetEdmModel();
         }
     }
