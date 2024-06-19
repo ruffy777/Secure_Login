@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("seclogin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f88ada507970bf35513d759c01491cc6c7a49fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6932d20e3c7a1ecd57a61c115a7c770ed3957277")]
 [assembly: System.Reflection.AssemblyProductAttribute("seclogin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("seclogin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

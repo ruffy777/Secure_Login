@@ -14,10 +14,10 @@ using Microsoft.Identity.Client;
 namespace API.Controllers
 {
     [EnableQuery]
-    public class LoginController : ODataController
+    public class UserCredentialController : ODataController
     {
         private readonly ApiDbContext _context;
-        public LoginController(ApiDbContext context)
+        public UserCredentialController(ApiDbContext context)
         {
             _context = context;
         }

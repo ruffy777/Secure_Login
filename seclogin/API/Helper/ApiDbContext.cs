@@ -12,13 +12,13 @@ namespace API.Helper
     {
         public virtual DbSet<UserCredential> UserCredential { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<UserCredential>().HasNoKey();
+        //    modelBuilder.Entity<UserCredential>().HasNoKey();
 
-        }
+        //}
     }
     
 }
