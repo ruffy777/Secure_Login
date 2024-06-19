@@ -17,12 +17,6 @@ builder.Services.AddControllers()
 
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddStackExchangeRedisCache(options =>
-{
-    options.Configuration = "redis:6379"; // redis is the container name of the redis service. 6379 is the default port
-    options.InstanceName = "SampleInstance";
-});
-
 string connectionString = builder.Configuration.GetConnectionString("API");
 builder.Services.AddDbContext<ApiDbContext>(options => options.UseSqlServer(connectionString));
 var app = builder.Build();

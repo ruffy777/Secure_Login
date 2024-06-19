@@ -28,7 +28,11 @@ namespace API.Controllers
             return _context.UserCredential.AsQueryable();
         }
 
-
+        public IQueryable<UserCredential> Get([FromODataUri] Guid key)
+        {
+            return _context.UserCredential
+                .Where(c => c.pk_UserCredential == key);
+        }
 
 
         public async Task<IActionResult> Post([FromBody] UserCredential userCredential)

@@ -29,3 +29,6 @@ C:\Users\rapha\source\repos\Secure_Login\seclogin\seclogin\obj\Debug\net8.0\refi
 C:\Users\rapha\source\repos\Secure_Login\seclogin\seclogin\obj\Debug\net8.0\seclogin.pdb
 C:\Users\rapha\source\repos\Secure_Login\seclogin\seclogin\obj\Debug\net8.0\seclogin.genruntimeconfig.cache
 C:\Users\rapha\source\repos\Secure_Login\seclogin\seclogin\obj\Debug\net8.0\ref\seclogin.dll
+C:\Users\rapha\source\repos\Secure_Login\seclogin\seclogin\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\rapha\source\repos\Secure_Login\seclogin\seclogin\obj\Debug\net8.0\seclogin.csproj.AssemblyReference.cache
+C:\Users\rapha\source\repos\Secure_Login\seclogin\seclogin\obj\Debug\net8.0\seclogin.csproj.CopyComplete

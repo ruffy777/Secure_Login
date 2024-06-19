@@ -12,12 +12,9 @@ C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\seclogin.deps.json
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\seclogin.runtimeconfig.json
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\seclogin.staticwebassets.runtime.json
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\seclogin.exe
-C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\StackExchange.Redis.dll
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Microsoft.Extensions.Options.dll
-C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Pipelines.Sockets.Unofficial.dll
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\API.pdb
 C:\Users\rapha\source\repos\Secure_Login\seclogin\obj\Debug\docker-compose.dcproj.CopyComplete
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Microsoft.AspNetCore.OData.dll
@@ -40,3 +37,4 @@ C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\ru\Microsoft.Data.Sq
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\rapha\source\repos\Secure_Login\seclogin\bin\Debug\Newtonsoft.Json.dll
