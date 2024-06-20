@@ -13,10 +13,14 @@ namespace seclogin.Helpers
 {
     public interface IApiHelper
     {
+        public Task<(bool, string?)> Get(string url);
+        public Task<(bool, string?)> Post(string data, string url);
+        public Task<(bool, string?)> Patch(string data, string url);
+        public Task<(bool, string?)> Delete(string url);
 
     }
 
-    public class ApiHelper
+    public class ApiHelper : IApiHelper
     {
         private readonly HttpClient _httpClient;
         private readonly IHttpContextAccessor _contextAccessor;
@@ -42,12 +46,12 @@ namespace seclogin.Helpers
                 var jsonContent = await responseMessage.Content.ReadAsStringAsync();
 
                 var dictContent = JsonConvert.DeserializeObject<Dictionary<string, object>>(jsonContent);
-                if (dictContent == null) 
+                if (dictContent == null)
                     return (false, null);
                 return (true, dictContent["value"].ToString());
 
 
-                return(true, jsonContent.ToString());
+                return (true, jsonContent.ToString());
                 
             }catch (Exception)
             {

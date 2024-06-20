@@ -6,6 +6,7 @@ GO
 
 
 CREATE OR ALTER procedure usp_PostUserCredential
+	@pk_UserCredential UNIQUEIDENTIFIER,
 	@Email varchar(60),
 	@Passwort varchar(256),
 	@Vorname varchar(60),
@@ -23,7 +24,7 @@ BEGIN
 		Vorname,
 		Nachname
 	) VALUES (
-		NEWID(),
+		@pk_UserCredential,
 		@Email,
 		@Passwort,
 		@Vorname,

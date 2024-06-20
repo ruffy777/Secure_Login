@@ -13,7 +13,9 @@ builder.Services.AddAuthorization();
 // Add services to the container.
 
 builder.Services.AddControllers()
-    .AddOData(opt => opt.AddRouteComponents("", ApplicationEdmModel.GetEdmModel()));
+    .AddOData(opt => 
+    opt.Filter().Select().OrderBy().Count()
+    .AddRouteComponents("", ApplicationEdmModel.GetEdmModel()));
 
 builder.Services.AddEndpointsApiExplorer();
 
