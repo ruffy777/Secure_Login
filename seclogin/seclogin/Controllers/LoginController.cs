@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using seclogin.Helpers;
 using seclogin.Models;
+using System.Reflection;
+using System.Security.Claims;
 using System.Web;
 
 namespace seclogin.Controllers
@@ -35,7 +39,22 @@ namespace seclogin.Controllers
 
             if(result)
             {
+                var claims = new List<Claim>
+                            {
+                                new Claim(ClaimTypes.Name, userCredential.Email),
+                                new Claim(ClaimTypes.Role, "User")
+                            };
+
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+                await HttpContext.SignInAsync(principal, new AuthenticationProperties
+                {
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddDays(2)
+                });
+                HttpContext.Session.SetString("Name", email);
+
                 return RedirectToAction("Index", "Home");
+                
             }
             else
             {

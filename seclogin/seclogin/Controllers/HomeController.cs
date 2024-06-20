@@ -1,6 +1,10 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using seclogin.Models;
 using System.Diagnostics;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Components;
 
 namespace seclogin.Controllers
 {
@@ -15,7 +19,16 @@ namespace seclogin.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                ViewBag.Message = HttpContext.Session.GetString("Name");
+                return View();
+            }
+            else
+            {
+                ViewBag.Message = "logged out";
+                return View();
+            }
         }
 
         public IActionResult Privacy()
@@ -28,5 +41,8 @@ namespace seclogin.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
     }
 }
