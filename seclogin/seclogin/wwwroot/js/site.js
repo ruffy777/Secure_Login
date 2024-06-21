@@ -44,6 +44,8 @@ function loginPost(event) {
         Nachname: null
     };
 
+    
+
     $.ajax({
         type: 'POST',
         url: '/Login/Login',
@@ -51,11 +53,13 @@ function loginPost(event) {
         contentType: 'application/json',
         success: function (response) {
             console.log("Success: ", response);
+            alert("Logged In");
             // Handle success
         },
         error: function (error) {
             console.error("Error: ", error);
             // Handle error
+            alert("wrong Password or E-Mail");
         }
     });
 }

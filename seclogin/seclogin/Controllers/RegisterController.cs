@@ -27,6 +27,10 @@ namespace seclogin.Controllers
         {
             if (userCredential == null) { return BadRequest("Data is empty"); }
             userCredential.pk_UserCredential = Guid.NewGuid();
+            bool containsInt = userCredential.Passwort.Any(char.IsDigit);
+
+            if(userCredential.Passwort.Length < 8 || !containsInt ) { return BadRequest("Password too easy"); }
+            
 
             var passworthash = _hashHelper.PasswordHash(userCredential.Passwort, userCredential.pk_UserCredential.ToString());
             userCredential.Passwort = passworthash;
